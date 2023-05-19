@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Cart | E-COMMERCE WEBSITE BY EDYODA </title>
+    <link rel="stylesheet" href="css/cart.css">
+    <!-- favicon -->
+    <link rel="icon" href="https://yt3.ggpht.com/a/AGF-l78km1YyNXmF0r3-0CycCA0HLA_i6zYn_8NZEg=s900-c-k-c0xffffffff-no-rj-mo" type="image/gif" sizes="16x16">
+    <!-- header links -->
+    <script src="https://kit.fontawesome.com/4a3b1f73a2.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./span.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/content.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+        <!-- HEADER -->
+        <header>
+            <section>
+                <!-- MAIN CONTAINER -->
+                <span id="container">
+                    <!-- SHOP NAME -->
+                    <span id="shopName"><a href="index.html"> <b>So</b>fy <img src="https://pic.onlinewebfonts.com/svg/img_546006.png" alt="logo" style="width: 35px; position:relative; left:3px " ></a></span>
+                    
+                        <!-- COLLCETIONS ON WEBSITE -->
+                        <!-- <span id="collection">
+                            <span id="clothing"><a href="./clothing.html"> CLOTHING </a></span>
+                            <span id="accessories"><a href="./accessories.html"> ACCESSORIES </a></span>
+                        </span> -->
+                        <span style="display: flex; justify-content: flex-end;">
+                            <!-- SEARCH SECTION -->
+                            <span id="search">
+                                <i class="fas fa-search search"></i>
+                                <input type="text" id="input" name="searchBox" placeholder="Search for Electronic and Accessories">
+                            </span>
+                            <!-- USER SECTION (CART AND USER ICON) -->
+                        </span>
+                        <span id="user">
+                            <a href="./cart.html" style="    position: absolute;
+                            right: 5px;"> <i  class="fas fa-shopping-cart addedToCart"></i><span style="    position: absolute;
+                            right: 5px; top:-20px; width:auto " id="badge"> 0 </span></a>
+                            <!-- <a href="#"> <i class="fas fa-user-circle userIcon"></i> </a> -->
+                        </span>
+                    </span>
+                </span>
+            </section>
+        </header>
+    <!-- <span id="1"></span>
+    <script>
+        load("header.html");
+        function load(url)
+        {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(1).innerHTML = req.responseText;
+        }
+    </script> -->
+
+        <!-- CART CONTAINER -->
+    <span id="cartMainContainer">
+        <h1> Checkout </h1>
+        <h3 id="totalItem"> Total Items: 0 </h3>
+
+        <span id="cartContainer">
+            <!-- JS rendered code -->
+        </span>
+
+    </span>
+
+</body>
+    <!-- FOOTER -->
+    <footer>
+        <section>
+          <span id="containerFooter">
+            <span id="webFooter">
+              <h3>Gallery Locations</h3>
+              <p>Adelaide SA</p>
+              <p>Ashgrove QLD</p>
+              <p>Batemans Bay NSW</p>
+              <p>Bega NSW</p>
+              <p>Bendigo VIC</p>
+              <p>Burleigh Heads QLD</p>
+              <p>Cairns QLD</p>
+              <p>Camberwell VIC</p>
+              <p>Camperdown NSW</p>
+              <p>Clayfield QLD</p>
+              <p>Coffs Harbour NSW</p>
+              <p>Colac VIC</p>
+              <p>Gladstone QLD</p>
+              <p>Heidelberg VIC</p>
+              <p>Hobart TAS</p>
+              <p>Maroochydore QLD</p>
+              <p>Mittagong NSW</p>
+              <p>Newmarket QLD</p>
+            </span>
+            <span id="webFooter">
+              <h3>Popular Categories</h3>
+              <p>Ovens</p>
+              <p>Cooktops</p>
+              <p>Dishwashers</p>
+              <p>Fridges</p>
+              <p>Rangehoods</p>
+            </span>
+            <span id="webFooter">
+              <h3>Company</h3>
+              <p>About Us</p>
+              <p>Company Information</p>
+              <p>Partners</p>
+              <p>Buying Power</p>
+              <p>Testimonials</p>
+              <p>FAQs</p>
+              <p>Commercial & Trade</p>
+              <p>Insiders Club</p>
+              <p>Find a Gallery</p>
+              <p>Contact Us</p>
+              <p>Modern Slavery Policy</p>
+              <p>Ideas & Inspiration</p>
+              <p>National Product Review</p>
+              <p>Scam Alerts</p>
+              <p>COVID Updates</p>
+            </span>
+            <span id="webFooter">
+              <h3>Shopping</h3>
+              <p>My Account</p>
+              <p>Payment Options</p>
+              <p>Delivery Information</p>
+              <p>Free Delivery</p>
+              <p>Returns</p>
+              <p>Price Match Enquiry</p>
+              <p>Privacy Policy</p>
+              <p>Back Up Plan</p>
+              <p>Terms of Order Placement</p>
+              <p>Terms & Conditions</p>
+              <p>Gift Card Terms of Use</p>
+              <p>Afterpay</p>
+              <p>Humm</p>
+              <p>Zip - Own it now, pay later</p>
+            </span>
+          </span>
+          <span id="credit">
+            <a href="https://linkedin.com/in/">© Wiingy-Sofy</a> &nbsp&nbsp&nbsp |
+            &nbsp&nbsp&nbsp
+            <a href="https://www.edyoda.com/" target="_blank">E-Commerce</a>
+          </span>
+        </section>
+      </footer>  
+    <!-- <span id="4"></span>
+    <script>
+        load("footer.html");
+        function load(url)
+        {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(4).innerHTML = req.responseText;
+        }
+    </script> -->
+<script src="/cart.js"></script>
+</html>

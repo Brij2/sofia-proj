@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="stylesheet" href="/style.css"> -->
+    <title>Wiingy-Sofy E-COMMERCE WEBSITE </title>
+    <!-- favicon -->
+    <link rel="icon" href="https://yt3.ggpht.com/a/AGF-l78km1YyNXmF0r3-0CycCA0HLA_i6zYn_8NZEg=s900-c-k-c0xffffffff-no-rj-mo" type="image/gif" sizes="16x16">
+    <!-- header links -->
+    <script src="https://kit.fontawesome.com/4a3b1f73a2.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <!-- slider links -->
+    <!-- <script src="http://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> -->
+    <script src="js/jQuery3.4.1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <link rel="stylesheet" href="./span.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/content.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <style>
+        .subclass.show {
+          display: block;
+        }
+    </style>
+    <style>
+        body
+        {
+            margin: auto;
+        }
+        #containerSlider
+        {
+            margin: auto;
+            width: 70%;
+            z-index: -1;
+            border-radius: 10px;
+            text-align: center;
+            align-content: center;
+            padding-top: 10px;
+            box-sizing: border-box;
+        }
+        #containerSlider img
+        {
+            width: 80% ;
+            height: 60% !important;
+            border-radius: 10px;
+            text-align: center;
+            align-content: center;
+        }
+        @media(max-width: 732px)
+        {
+            #containerSlider img
+            {
+                height: 12em;
+            }
+        }
+        @media(max-width: 500px)
+        {
+            #containerSlider img
+            {
+                height: 10em;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <section>
+            <!-- MAIN CONTAINER -->
+            <span id="container">
+                <!-- SHOP NAME -->
+                <span id="shopName"><a href="index.html"> <b>So</b>fy <img src="https://pic.onlinewebfonts.com/svg/img_546006.png" alt="logo" style="width: 35px; position:relative; left:3px " ></a></span>
+                
+                    <!-- COLLCETIONS ON WEBSITE -->
+                    <!-- <span id="collection">
+                        <span id="clothing"><a href="./clothing.html"> CLOTHING </a></span>
+                        <span id="accessories"><a href="./accessories.html"> ACCESSORIES </a></span>
+                    </span> -->
+                    <span style="display: flex; justify-content: flex-end;">
+                        <!-- SEARCH SECTION -->
+                        <span id="search">
+                            <i class="fas fa-search search"></i>
+                            <input type="text" id="input" name="searchBox" placeholder="Search for Electronic and Accessories">
+                        </span>
+                        <!-- USER SECTION (CART AND USER ICON) -->
+                    </span>
+                    <span id="user">
+                        <a href="./cart.html" style="    position: absolute;
+                        right: 5px;"> <i  class="fas fa-shopping-cart addedToCart"></i><span style="    position: absolute;
+                        right: 5px; top:-20px; width:auto " id="badge"> 0 </span></a>
+                        <!-- <a href="#"> <i class="fas fa-user-circle userIcon"></i> </a> -->
+                    </span>
+                </span>
+            </span>
+        </section>
+    </header>
+
+    <!-- <span id="1"></span>
+    <script>
+        load("./header.html");
+        function load(url)
+        {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(1).innerHTML = req.responseText;
+        }
+    </script> -->
+
+    <!-- Navbar -->
+    <section>
+        <nav>
+            <ul class="navbar">
+                <li class="nav-item">
+                    <a href="#">Shop by Category</a>
+                    <ul class="dropdown">
+                        <li>
+                            <a href="#3">KITCHEN & COOKING</a>
+                            <ul class="dropdon" >
+                            <section class="section1"  style="display: flex; flex-direction:column"  >
+                                <section class="section2" style="display: flex; flex-direction:row ">
+                                    <li><a href="./contentDetails.html?1">OVENS</a>
+                                       
+                                        <ul class="dropdn">
+                                            <li><a href="./contentDetails.html?1">Electric Convection Oven</a></li>
+                                            <li><a href="./contentDetails.html?1">Gas Range Oven
+                                                </a></li>
+                                            <li><a href="./contentDetails.html?1">Built-in Double Wall Oven</a></li>
+                                          </ul>
+                                    </li>
+                                      <li><a href="#">Dishwasher</a>
+                                        <ul class="dropdn">
+                                            <li><a href="#">Built-in Undercounter Dishwasher
+                                                
+                                               
+                                                </a></li>
+                                            <li><a href="#"> Portable Countertop Dishwasher
+                                                
+                                                
+                                                </a></li>
+                                            <li><a href="#">Drawer Dishwasher</a></li>
+                                          </ul>
+                                    </li>
+                                      <li><a href="#">COOKTOPS</a>
+                                        <ul class="dropdn">
+                                            <li><a href="#">Electric Induction Cooktop
+                                                </a></li>
+                                            <li><a href="#">Gas Cooktop with Sealed Burners
+                                                </a></li>
+                                            <li><a href="#">Ceramic Glass Cooktop</a></li>
+                                          </ul>
+                                        </li>
+                                </section>
+                                <section class="section1" style="display: flex; flex-direction:column   " >
+                                    <section class="section2" style="display: flex; flex-direction:row ">
+                                        <li><a href="./contentDetails.html?3">RANGEHOODS</a>
+                                            <ul class="dropdn">
+                                                <li><a href="./contentDetails.html?3">Wall-Mounted Range Hood
+                                                    </a></li>
+                                                <li><a href="./contentDetails.html?3">Under-Cabinet Range Hood
+                                                    </a></li>
+                                                <li><a href="./contentDetails.html?3">Island Range Hood</a></li>
+                                              </ul>
+                                        </li>
+                                          <li><a href="#">MICROWAVES</a>
+                                            <ul class="dropdn">
+                                                <li><a href="#">Countertop Microwave Oven
+                                                    </a></li>
+                                                <li><a href="#">Over-the-Range Microwaves
+                                                    </a></li>
+                                                <li><a href="#">Built-in Microwave Drawer</a></li>
+                                              </ul>
+                                        </li>
+                                          <li><a href="#">SINKWARE</a>
+                                            <ul class="dropdn">
+                                                <li><a href="#">Stainless Steel Single Bowl Sink
+                                                    </a></li>
+                                                <li><a href="#">Undermount Double Bowl Sink
+                                                    </a></li>
+                                                <li><a href="#">Farmhouse Apron Front Sink</a></li>
+                                              </ul>
+                                            </li>
+                                    </section>
+                                    <section>
+                            </section>
+                                  
+                            </ul>
+                          </li>
+                          <!-- -- -->
+                          <li>
+                            <a href="#">FRIDGES & FREEZERS</a>
+                            <ul class="dropdon">
+                            <section class="section1" style="display: flex; flex-direction:column" >
+                                <section class="section2" style="display: flex; flex-direction:row ">
+                                    <li><a href="#">FRIDGES</a>
+                                        <ul class="dropdn">
+                                            <li><a href="#">item1</a></li>
+                                            <li><a href="#">item2</a></li>
+                                            <li><a href="#">item3</a></li>
+                                          </ul>
+                                    </li>
+                                      <li><a href="#">WINE CABINETS</a>
+                                        <ul class="dropdn">
+                                            <li><a href="#">item1</a></li>
+                                            <li><a href="#">item2</a></li>
+                                            <li><a href="#">item3</a></li>
+                                          </ul>
+                                    </li>
+                                      <li><a href="#">FREEZERS</a>
+                                        <ul class="dropdn">
+                                            <li><a href="#">item1</a></li>
+                                            <li><a href="#">item2</a></li>
+                                            <li><a href="#">item3</a></li>
+                                          </ul>
+                                        </li>
+                                </section>
+
+                            </section>
+                                  
+                            </ul>
+                          </li>
+                          <!-- ---- -->
+                          <li>
+                            <a href="#">LAUNDRY</a>
+                            <ul class="dropdon" >
+                            
+                            <section class="section1" style="display: flex; flex-direction:column" >
+                                <section class="section2" style="display: flex; flex-direction:row ">
+                                    <li><a href="#">WASHING MACHINES</a>
+                                        <ul class="dropdn">
+                                            <li><a href="#">item1</a></li>
+                                            <li><a href="#">item2</a></li>
+                                            <li><a href="#">item3</a></li>
+                                          </ul>
+                                    </li>
+                                      <li><a href="#">CLOTHES DRYERS</a>
+                                        <ul class="dropdn">
+                                            <li><a href="#">item1</a></li>
+                                            <li><a href="#">item2</a></li>
+                                            <li><a href="#">item3</a></li>
+                                          </ul>
+                                    </li>
+                                      <li><a href="#">LAUNDRY ACCESSORIES </a>
+                                        <ul class="dropdn">
+                                            <li><a href="#">item1</a></li>
+                                            <li><a href="#">item2</a></li>
+                                            <li><a href="#">item3</a></li>
+                                          </ul>
+                                        </li>
+                                </section>
+                                <section class="section1" style="display: flex; flex-direction:column" >
+                                    <section class="section2" style="display: flex; flex-direction:row ">
+                                        <li><a href="#">category1</a>
+                                            <ul class="dropdn">
+                                                <li><a href="#">item1</a></li>
+                                                <li><a href="#">item2</a></li>
+                                                <li><a href="#">item3</a></li>
+                                              </ul>
+                                        </li>
+                                          <li><a href="#">category2</a>
+                                            <ul class="dropdn">
+                                                <li><a href="#">item1</a></li>
+                                                <li><a href="#">item2</a></li>
+                                                <li><a href="#">item3</a></li>
+                                              </ul>
+                                        </li>
+                                          <li><a href="#">category3</a>
+                                            <ul class="dropdn">
+                                                <li><a href="#">item1</a></li>
+                                                <li><a href="#">item2</a></li>
+                                                <li><a href="#">item3</a></li>
+                                              </ul>
+                                            </li>
+                                    </section>
+                                <section>
+                            </section>
+                                  
+                            </ul>
+                          </li>
+
+                    </ul>
+                  </li>
+              <li class="nav-item">
+                <a href="./brands.html">Brands</a>
+                <ul class="dropdown">
+                  <li><a href="#">Dresses</a>
+                    <ul class="dropdon">
+                        <li><a href="#">category1</a></li>
+                        <li><a href="#">category2</a></li>
+                        <li><a href="#">category3</a></li>
+                      </ul>    
+                </li>
+                  <li><a href="#">Tops</a></li>
+                  <li><a href="#">Skirts</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#">Current Catalouge </a>
+                <ul class="dropdown">
+                    <li><a href="#">category1</a></li>
+                    <li><a href="#">category2</a></li>
+                    <li><a href="#">category3</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#">Inspiration</a>
+                <ul class="dropdown">
+                    <li><a href="#">category1</a></li>
+                    <li><a href="#">category2</a></li>
+                    <li><a href="#">category3</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="./contactForm.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a href="#">Promotions </a>
+                <ul class="dropdown">
+                  <li><a href="#">Adelaide SA</a></li>
+                  <li><a href="#">Ashgrove QLD</a></li>
+                  <li><a href="#">Colac VIC</a></li>
+                  <li><a href="#">Gladstone QLD</a></li>
+                  <li><a href="#">Heidelberg VIC</a></li>
+                  <li><a href="#">Hobart TAS</a></li>
+                  <li><a href="#">Maroochydore QLD</a></li>
+                  <li><a href="#">Mittagong NSW</a></li>
+                  <li><a href="#">Newmarket QLD</a></li>
+                  <li><a href="#">Orange NSW</a></li>
+                  <li><a href="#">Rockhampton QLD</a></li>
+                  <li><a href="#">Stones Corner QLD</a></li>
+                  <li><a href="#">Toowoomba QLD</a></li>
+                  <li><a href="#">Townsville QLD</a></li>
+                  <li><a href="#">Wagga Wagga NSW</a></li>
+                  <li><a href="#">Wantirna South VIC</a></li>
+                </ul>
+              </li>
+             
+            </ul>
+          </nav>   
+    </section>   
+
+    <!-- <span id="5"></span>
+    <script>
+        load("./navbar.html");
+        function load(url)
+        {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(5).innerHTML = req.responseText;
+        }
+    </script> -->
+
+    <!-- SLIDER -->
+    <section>
+        <span id="containerSlider">
+            <span id="slidingImage"> <img src="https://www.designerappliances.com.au/media/wysiwyg/HP_2_Col_1000x400.jpg" alt="image1"> </span>
+            <span id="slidingImage"> <img src="https://www.designerappliances.com.au/media/wysiwyg/statement_fridges_2col_100x499_2.jpg" alt="image2"> </span>
+            <span id="slidingImage"> <img src="https://www.designerappliances.com.au/media/wysiwyg/BNPL-Options_1.jpg" alt="image3"> </span>
+            <span id="slidingImage"> <img src="https://www.designerappliances.com.au/media/wysiwyg/Images/DA_2Col_deliveryinfo.jpg" alt="image4"> </span>
+        </span>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script>
+        $(document).ready(function()
+        {
+        $('#containerSlider').slick({
+            dots: true,
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            });
+        });
+    </script>
+    <!-- <span id="2"></span>
+    <script>
+        load("slider.html");
+        function load(url)
+        {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(2).innerHTML = req.responseText;
+        }
+    </script> -->
+
+    <!-- CONTENT SECTION -->
+    <span id="mainContainer">
+        <h1> Accessories for Kitchens </h1>
+        <span id="containerClothing">
+            <!-- Clothing Section -->
+            <span id="clothingSection" style="display: none;">
+                <!-- JS rendered code -->
+                <!-- Place your clothing items here -->
+            </span>
+        </span>
+    
+        <h1> Accessories for Men and Women </h1>
+        <span id="containerAccessories">
+            <!-- Accessories Section -->
+            <span id="accessoriesSection" style="display: none;">
+                <!-- JS rendered code -->
+                <!-- Place your accessories items here -->
+            </span>
+        </span>
+    </span>
+    <script src="./content.js"></script>
+
+    <!-- <span id="3"></span>
+    <script>
+        load("./content.html");
+        function load(url)
+        {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(3).innerHTML = req.responseText;
+        }
+    </script> -->
+
+    <!-- brands page -->
+    <span id="6"></span>
+    <script>
+        load("./brands.html");
+        function load(url)
+        {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(6).innerHTML = req.responseText;
+        }
+    </script>
+
+    <!-- FOOTER -->
+    <footer>
+        <section>
+          <span id="containerFooter">
+            <span id="webFooter">
+              <h3>Gallery Locations</h3>
+              <p>Adelaide SA</p>
+              <p>Ashgrove QLD</p>
+              <p>Batemans Bay NSW</p>
+              <p>Bega NSW</p>
+              <p>Bendigo VIC</p>
+              <p>Burleigh Heads QLD</p>
+              <p>Cairns QLD</p>
+              <p>Camberwell VIC</p>
+              <p>Camperdown NSW</p>
+              <p>Clayfield QLD</p>
+              <p>Coffs Harbour NSW</p>
+              <p>Colac VIC</p>
+              <p>Gladstone QLD</p>
+              <p>Heidelberg VIC</p>
+              <p>Hobart TAS</p>
+              <p>Maroochydore QLD</p>
+              <p>Mittagong NSW</p>
+              <p>Newmarket QLD</p>
+            </span>
+            <span id="webFooter">
+              <h3>Popular Categories</h3>
+              <p>Ovens</p>
+              <p>Cooktops</p>
+              <p>Dishwashers</p>
+              <p>Fridges</p>
+              <p>Rangehoods</p>
+            </span>
+            <span id="webFooter">
+              <h3>Company</h3>
+              <p>About Us</p>
+              <p>Company Information</p>
+              <p>Partners</p>
+              <p>Buying Power</p>
+              <p>Testimonials</p>
+              <p>FAQs</p>
+              <p>Commercial & Trade</p>
+              <p>Insiders Club</p>
+              <p>Find a Gallery</p>
+              <p>Contact Us</p>
+              <p>Modern Slavery Policy</p>
+              <p>Ideas & Inspiration</p>
+              <p>National Product Review</p>
+              <p>Scam Alerts</p>
+              <p>COVID Updates</p>
+            </span>
+            <span id="webFooter">
+              <h3>Shopping</h3>
+              <p>My Account</p>
+              <p>Payment Options</p>
+              <p>Delivery Information</p>
+              <p>Free Delivery</p>
+              <p>Returns</p>
+              <p>Price Match Enquiry</p>
+              <p>Privacy Policy</p>
+              <p>Back Up Plan</p>
+              <p>Terms of Order Placement</p>
+              <p>Terms & Conditions</p>
+              <p>Gift Card Terms of Use</p>
+              <p>Afterpay</p>
+              <p>Humm</p>
+              <p>Zip - Own it now, pay later</p>
+            </span>
+          </span>
+          <span id="credit">
+            <a href="https://linkedin.com/in/">© Wiingy-Sofy</a> &nbsp&nbsp&nbsp |
+            &nbsp&nbsp&nbsp
+            <a href="https://www.edyoda.com/" target="_blank">E-Commerce</a>
+          </span>
+        </section>
+      </footer>   
+
+    <!-- <span id="4"></span>
+    <script>
+        load("./footer.html");
+        function load(url)
+        {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(4).innerHTML = req.responseText;
+        }
+    </script> -->
+
+</body>
+
+<!-- content JS -->
+<script src="./content.js"></script>
+<script src="./brandscript.js"></script>
+</html>
